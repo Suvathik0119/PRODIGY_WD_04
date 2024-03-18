@@ -1,0 +1,720 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+/*-- main color & font-size fixed here --*/
+:root{
+    --bg-color:#191e29;
+    --text-color:#fff;
+    --p-nav-txt-color:#696e79;
+    --sub-txt-color:#9ea6b9;
+    --main-color:#05e8a8;
+    --sub-color:#01c38d;
+    --navbtn-color:#132d46;
+    --mbtn-color:#0345d4;
+    --h1-font:5.2rem;
+    --h2-font:3.5rem;
+    --h3-font:2.0rem;
+    --p-font:1.1rem;
+    --spantxt-family:cursive;
+}
+
+
+/*-<<- website scrool smoother ->>-*/
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+/*-- body style here --*/
+body{
+    width: 100%;
+    font-family:"Quicksand", sans-serif;
+    background-color: var(--bg-color);
+}
+
+
+
+
+/*-- section style here --*/
+section{
+    margin: 100px 15% 30px ;
+    background-color: var(--text-color);
+}
+
+
+
+
+
+
+/*-- let start make style for other forms --*/
+
+/*-- nav-bar style start --*/
+.nav-bar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 22px 15%;
+    border: 1px solid transparent;
+}
+.logo img{
+    position: static;
+    width: 100px;
+    height: auto;
+    left: 0;
+    box-shadow: 1px 1px 10px black;
+}
+.nav-link{
+    display: flex;
+}
+.nav-link a{
+    cursor: pointer;
+    color:var(--text-color);
+    font-size:var(--p-font);
+    padding: 10px auto;
+    margin: 0.2px 25px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: 500;
+}
+.nav-link a:hover{
+    color:var(--sub-color);
+    border-bottom: 2px solid var(--p-nav-txt-color);
+    width: 700;
+}
+/*-- nav-bar style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- home style start --*/
+.home{
+    height: 50vh;
+    background-image: url(./img/bg1.gif);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.home-details{
+    margin: 50px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+.home-details h1{
+    font-size: var(--h1-font);
+    color: var(--main-color);
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px black ;
+    transition: all 0.5s ease-in-out;
+}
+.home-details h1:hover{
+    text-shadow: 1px 1px 5px var(--sub-color);
+}
+.home-details h2{
+    font-size: var(--h2-font);
+    color: var(--sub-txt-color);
+    font-family: var(--spantxt-family);
+}
+.home-details h2 span{
+    font-size: var(--h2-font);
+    color: var(--main-color);
+    font-family: var(--spantxt-family);
+}
+.home-details h3{
+    font-size: var(--h3-font);
+    color: var(--sub-txt-color);
+    font-family: var(--spantxt-family);
+}
+/*-- home style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- about style start --*/
+.about{
+    height: 50vh;
+    background-image: url(./img/ab.jpg);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.about h2{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: var(--h2-font);
+    color: var(--sub-color);
+    text-shadow: 1px 1px 10px black ;
+    transition: all 0.5s ease-in-out;
+}
+.ab1{
+    display: flex;
+}
+.about h2:hover{
+    color: var(--main-color);   
+}
+.about-details{
+    max-width: 60%;
+    margin: 25px 5%;
+}
+.my{
+    max-width: 35%;
+    margin: 30px;
+}
+.my img{
+    max-width: 200px;
+}
+.about-details p{
+    font-size: var(--p-font);
+    text-align: justify;
+    color: var(--text-color);
+    text-shadow: 1px 1px 5px black ;
+    opacity: 75%;
+    line-height: 1.3;
+}
+.about-details p a{
+    color: var(--sub-txt-color);
+    text-decoration: none;
+}
+.about-details p a:hover{
+    color: var(--main-color);
+    opacity: 100%;
+}
+.a-button {
+    margin: 40px 30% 0px ;
+    max-width: 25%;
+    justify-content: center;
+}
+.a-button button{
+    padding: 5px 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.a-button button:hover{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+/*-- abuot style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- skill style start --*/
+.skill{
+    height: 50vh;
+    background-image: url(./img/ab.jpg);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.skill h2{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-shadow: 1px 1px 10px black ;
+    transition: all 0.5s ease-in-out;
+}
+.skill h2 span{
+    color: var(--sub-color);
+}
+
+
+/*--  skill img display method  --*/
+.svg{
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*--  skill img padding and margin method  --*/
+.html{
+    max-width: 25%;
+    margin: 30px 4%;
+    height: 150px;
+    font-family: var(--spantxt-family);
+    font-size: var(--p-font);
+    color: var(--sub-txt-color);
+    text-align: center;
+    justify-items: center;
+}
+
+
+/*--  html  --*/
+
+.hl {
+    position: relative;
+    max-width: 100%;
+    border: 3px solid var(--main-color);
+    border-radius: 150px;
+}
+.hl img{
+    margin: 25px;
+    width: 100px;
+}
+
+
+/*--  css  --*/
+
+.cl {
+    position: relative;
+    max-width: 100%;
+    border: 3px solid var(--main-color);
+    border-radius: 150px;
+}
+.cl img{
+    margin: 25px;
+    width: 100px;
+}
+
+
+/*--  javascript  --*/
+
+.jsl {
+    position: relative;
+    max-width: 100%;
+    border: 3px solid var(--main-color);
+    border-radius: 150px;
+}
+.jsl img{
+    margin: 25px;
+    width: 100px;
+}
+
+
+/*--  sql  --*/
+
+.sl {
+    position: relative;
+    max-width: 100%;
+    border: 3px solid var(--main-color);
+    border-radius: 100px;
+}
+.sl img{
+    margin: 20px;
+    width: 115px;
+}
+/*-- skill style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- project style start --*/
+.project{
+    height: 55vh;
+    background-image: url(./img/ab.jpg);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.project h2{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-shadow: 1px 1px 10px black ;
+    transition: all 0.5s ease-in-out;
+}
+.project h2 span{
+    color: var(--sub-color);
+}
+.pp p{
+    text-align: center;
+    margin-bottom:0 ;
+    color: var(--sub-txt-color);
+    opacity: 75%;
+}
+.pp p span{
+    cursor: pointer;
+    color: var(--sub-color);
+}
+.pp p a{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--p-nav-txt-color);
+    font-size: var(--p-font);
+    letter-spacing: 1.1px;
+    transition: all 0.3s ease-in-out;
+}
+.pp p a:hover{
+    color: var(--mbtn-color);
+}
+
+
+/*--  project img display method  --*/
+.p-list{
+    width: 100%;
+    display: flex;
+    margin: 30px;
+}
+
+/*--  progect img padding and margin method  --*/
+.p1{
+    max-width: 30%;
+    margin: 0px 3% 20px;
+    height: 200px;
+    font-family: var(--spantxt-family);
+    font-size: var(--p-font);
+    color: var(--sub-txt-color);
+    text-align: center;
+    justify-items:center;
+    border: none;
+    border-top: 3px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.p1:hover{
+    border-top: 3px solid var(--main-color);
+}
+.p1 h3{
+    font-size: var(--h3-font);
+    color: var(--mbtn-color);
+    transition: all 0.5s ease-in-out;
+}
+.p1 h3:hover{
+    color: var(--main-color);
+}
+
+
+/* <<<<--- 1st project --->>>> */
+.p1-img{
+    margin: 20px;
+    position: relative;
+    max-width: 100%;
+}
+.p1-img img{
+    width: 200px;
+
+}
+
+
+
+/* <<<<--- 2nd project --->>>> */
+.p2-img{
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+}
+.p2-img img{
+    width: 250px;
+    height: 150px;
+}
+
+
+
+/* <<<<--- 3rd project --->>>> */
+.p3-img{
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.p3-img img{
+    width: 150px;
+}
+
+
+/*-- project style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- expirence style start --*/
+.experience{
+    height: 75vh;
+    background-image: url(./img/ab.jpg);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.experience h2{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-shadow: 1px 1px 10px black ;
+    transition: all 0.5s ease-in-out;
+}
+.experience h2 span{
+    color: var(--sub-color);
+}
+
+
+/*--  expirence img display method  --*/
+.ex-details{
+    width: 100%;
+    display: flex;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+
+/*--  expirence img padding and margin method  --*/
+.ex{
+    max-width: 25%;
+    margin: 15px 3%;
+    height: 150px;
+    font-family: var(--spantxt-family);
+    font-size: var(--p-font);
+    color: var(--sub-txt-color);
+    text-align: center;
+    justify-items: center;
+    border: none;
+    border-top: 3px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.ex:hover{
+    border-top: 3px solid var(--main-color);
+}
+.ex h3 a{
+    font-size: var(--h3-font);
+    color: var(--mbtn-color);
+    transition: all 0.5s ease-in-out;
+}
+.ex h3 a:hover{
+    color: var(--main-color);
+}
+
+
+/* <<<<--- ex-1 --->>>> */
+
+.ex-1 {
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+    border: 2px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.ex-1:hover{
+    border: 2px solid var(--mbtn-color);
+}
+.ex-1 img{
+    box-shadow: 1px 1px 20px black;
+    margin: 15px;
+    width: 190px;
+    transition: all 0.5s ease-in-out;
+}
+.ex-1 img:hover{
+    width: 200px;
+}
+
+
+/* <<<<--- ex-2 --->>>> */
+
+.ex-2 {
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+    border: 2px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.ex-2:hover{
+    border: 2px solid var(--mbtn-color);
+}
+.ex-2 img{
+    box-shadow: 1px 1px 20px black;
+    margin: 15px;
+    width: 190px;
+    transition: all 0.5s ease-in-out;
+}
+.ex-2 img:hover{
+    width: 200px;
+}
+
+
+/* <<<<--- ex-3 --->>>> */
+
+.ex-3 {
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+    border: 2px solid var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+.ex-3:hover{
+    border: 2px solid var(--mbtn-color);
+}
+.ex-3 img{
+    box-shadow: 1px 1px 20px black;
+    margin: 15px;
+    width: 100px;
+    transition: all 0.5s ease-in-out;
+}
+.ex-3 img:hover{
+    width: 110px;
+}
+
+/*-- expirence style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- contect style start --*/
+.contect{
+    height: 55vh;
+    background-image: url(./img/ab.jpg);
+    background-size:cover;
+    background-position: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 10px black;
+}
+.contect h2{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: var(--h2-font);
+    color: var(--sub-color);
+    text-shadow: 1px 1px 10px black ;
+    transition: all 0.5s ease-in-out;
+}
+.contect h2:hover{
+    color: var(--main-color);
+}
+
+
+/*--  contect (01) details display method  --*/
+
+.con1{
+    width: 100%;
+    display: flex;
+    height: 20vh;
+}
+
+
+/*-- logo display method  --*/
+
+.con-logo{
+    width: 30%;
+    height: 18vh;
+}
+.con-logo img{
+    box-shadow: 1px 1px 20px black;
+    margin: 2vh 8vh;
+    width: 150px;
+}
+
+
+/*-- social display method  --*/
+
+.social{
+    width: 40%;
+    height: 18vh;
+    margin: 3% 5%;
+}
+.social img{
+    box-shadow: 1px 1px 20px black;
+    width: 35px;
+    margin-right: 20px;
+}
+
+
+
+/*-- mail display method  --*/
+.mail {
+    margin: 3% 0% ;
+    max-width: 30%;
+    justify-content: center;
+}
+.mail button{
+    padding: 5px 20px;
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: var(--p-font);
+    background-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+.mail button:hover{
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 1px 1px 5px var(--main-color);
+    text-shadow: 1px 1px 3px var(--main-color);
+}
+
+
+/*--  contect (02) details display method  --*/
+
+.con2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 20vh;
+}
+
+
+/*--  contect (02) image details display method  --*/
+
+.con2 img{
+    margin: 0% 4%;
+    width: 120px;
+    height: 120px;
+}
+
+/*-- contect style end --*/
+
+
+/*---------------------------------------------------------*/
+
+
+/*-- footer style start --*/
+footer{
+    height: 1.3rem;
+    margin-bottom: 0;
+}
+footer a{
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--p-nav-txt-color);
+    font-size: var(--p-font);
+    letter-spacing: 1.1px;
+    transition: all 0.3s ease-in-out;
+}
+footer a:hover{
+    color: var(--mbtn-color);
+}
